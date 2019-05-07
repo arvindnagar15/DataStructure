@@ -23,6 +23,9 @@ import javax.print.attribute.HashAttributeSet;
  *	Implementation - 
  *	First count how mant times characters are appearing	
  *	Iterate and check which there is any odd number for character except once, if yes, not permutation palindrome else permutation palindrome.
+ * PS : getNumericValue() will convert characters that actually represent numbers 
+ * 		(like the "normal" digits 0-9, but also numerals in other scripts) to their numeric value
+ * 		If the character does not have a numeric value, then -1 is returned.
  */
 public class Six_PallindromePermutation {
 
