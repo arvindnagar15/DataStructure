@@ -17,7 +17,9 @@ public class Two_Permutation {
 		try {
 			String s1 = "Arvind";
 			String s2 = "vindrA";
-			System.out.println("Pallindrome outut data: " + isPalindrome(s1, s2));
+
+			System.out.println("Pallindrome data : " + isPalindrome(s1, s2));
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
