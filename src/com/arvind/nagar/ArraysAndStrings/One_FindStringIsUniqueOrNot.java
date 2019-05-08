@@ -24,7 +24,7 @@ public class One_FindStringIsUniqueOrNot {
 			int value = str.charAt(i);
 			System.out.println("value : "+value);
 			if(ch[value]) {
-				System.out.println("Not Unique");
+				System.out.println("Output Not Unique");
 				return false;
 			}
 			ch[value] = true;
