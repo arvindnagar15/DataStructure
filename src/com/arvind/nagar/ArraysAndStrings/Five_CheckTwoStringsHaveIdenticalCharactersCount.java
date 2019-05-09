@@ -20,7 +20,7 @@ public class Five_CheckTwoStringsHaveIdenticalCharactersCount {
 	public static void main(String[] args) {
 		try {
 			String s1 = "Arvind";
-			String s2 = "vvindA";
+			String s2 = "vindrA";
 			System.out.println("Identical : "+hasBothStringIdentical(s1, s2));
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -39,7 +39,7 @@ public class Five_CheckTwoStringsHaveIdenticalCharactersCount {
 			letters[ch]++;
 		}
 		for(int i = 0; i<s2.length(); i++) {
-			int val = (int) s2.charAt(i);
+			int val = s2.charAt(i);
 			letters[val]--;
 			if(letters[val] < 0) {
 				return false;
