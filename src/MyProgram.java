@@ -10,6 +10,7 @@ public class MyProgram {
 		System.out.println("I am inside main masterttt");
 		System.out.println("I am inside main masteryyy");
 		System.out.println("I am inside main masteruuu");
+
 	}
 
 }
