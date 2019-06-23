@@ -12,10 +12,9 @@ public class Eleven_ReverseStringButKeepSpaceAtSamePosition {
 			String s = "My name Hello";
 			char[] charStr = s.toCharArray();
 			int[] spaceCounter = new int[s.length()];
-			String space = " ";
-			
+			char space = ' ';
 			for(int i = 0; i<charStr.length; i++) {
-				if(String.valueOf(charStr[i]).equals(space)) {
+				if(charStr[i] == ' ') {
 					spaceCounter[i]++;
 				}
 			}
@@ -23,8 +22,8 @@ public class Eleven_ReverseStringButKeepSpaceAtSamePosition {
 			for(int i = 0; i<spaceCounter.length; ) {
 				System.out.println("not comint");
 				if(spaceCounter[i] == 0) {
-					if(!String.valueOf(charStr[spaceCounter.length-1-i]).equals(space)) {
-						builder.append(String.valueOf(charStr[spaceCounter.length-1-i]));
+					if(charStr[spaceCounter.length-1-i] != ' ') {
+						builder.append(charStr[spaceCounter.length-1-i]);
 					}
 					i++;
 				}else {
