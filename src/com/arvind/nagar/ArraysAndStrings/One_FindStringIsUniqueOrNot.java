@@ -12,7 +12,7 @@ public class One_FindStringIsUniqueOrNot {
 			String str = "Arvinda12";
 			System.out.println("Unique String : "+isUnique(str));
 
-			//System.out.println(Arrays.toString(ch));
+		
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -24,7 +24,9 @@ public class One_FindStringIsUniqueOrNot {
 			int value = str.charAt(i);
 			System.out.println("value : "+value);
 			if(ch[value]) {
-				System.out.println("Not Unique");
+
+				System.out.println("This is Not Unique");
+
 				return false;
 			}
 			ch[value] = true;
