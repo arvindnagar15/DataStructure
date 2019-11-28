@@ -2,10 +2,6 @@ package com.arvind.nagar.ArraysAndStrings;
 
 import java.util.Arrays;
 
-import com.oracle.webservices.internal.api.databinding.Databinding.Builder;
-
-import jdk.nashorn.internal.runtime.arrays.NumericElements;
-
 /**
  * 
  * @author Scorpio
