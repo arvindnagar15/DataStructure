@@ -42,7 +42,10 @@ public class StackImplementation {
 			System.out.println("Stack Underflow");
 			return 0;
 		} else {
-			int x = a[top--];
+			int value = top--;
+			int x = a[value];
+			a[value] = 0;//// as the item is removed, makes the element to 0.
+			
 			return x;
 		}
 	}
@@ -74,5 +77,6 @@ class Main {
 		s.push(30);
 		System.out.println(s.peek() + " Current value of stack");
 		System.out.println(s.pop() + " Popped from stack");
+		s.push(40);
 	}
 }
