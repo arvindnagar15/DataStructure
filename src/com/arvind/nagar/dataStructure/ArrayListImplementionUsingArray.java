@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.arvind.nagar.ArraysAndStrings;
+package com.arvind.nagar.dataStructure;
 
 import java.util.Arrays;
 
@@ -16,7 +16,7 @@ import java.util.Arrays;
  *  3. Insert all elements into array, but before adding, check if the size of actualIndex is 
  *     greater or equal to arrayLength/2, then increment the length of array by twice.  
  */
-public class P16_ImplementingArrayListUsingArray<E> {
+public class ArrayListImplementionUsingArray<E> {
 
 	private final int defaultSize = 2;
 	private int actualSize = 0;
@@ -24,7 +24,7 @@ public class P16_ImplementingArrayListUsingArray<E> {
 	
 	public static void main(String[] args) {
 
-		P16_ImplementingArrayListUsingArray arrayList = new P16_ImplementingArrayListUsingArray<>();
+		ArrayListImplementionUsingArray arrayList = new ArrayListImplementionUsingArray<>();
 		
 		for(int i=0; i<5; i++) {
 			arrayList.add(i);
