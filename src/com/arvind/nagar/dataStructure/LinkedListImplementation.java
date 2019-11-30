@@ -54,11 +54,29 @@ public class LinkedListImplementation {
 	}
 	
 	public int get(int index){
-		return 0;
+		Node currentNode = head;
+		for(short counter =0; counter<index; counter++){
+			currentNode = currentNode.next;
+		}
+		
+		return currentNode.item;
 	}
 	
 	public void remove(int index){
 		
+		if(index == 0){
+			head = head.next;
+		}else{
+			Node currentNode = head;
+			for(short counter = 0; counter<index; counter++){
+				currentNode = currentNode.next;
+			}
+			//Now take the n1 to temporary variable 
+			//and first assign removal index(let say index is index 2-> 25) to
+			// and then assign plug temp node next to currentNode
+			Node tempNode = currentNode.next;
+			currentNode.next = tempNode.next;
+		}
 	}
 
 	public static void main(String[] args) {
@@ -71,6 +89,10 @@ public class LinkedListImplementation {
 		list.add(40);
 		list.addAtStart(5);
 		list.addAtIndex(25, 2);
+		list.show();
+		System.out.println("Value is : "+list.get(1));
+		list.remove(2);
+		System.out.println("After removal : ");
 		list.show();
 	}catch(Exception e){
 		e.printStackTrace();
